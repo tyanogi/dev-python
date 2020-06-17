@@ -1,0 +1,11 @@
+version: '3'
+services:
+  python3:
+    restart: always
+    build: .
+    image: dev-python3
+    container_name: 'dev-python3'
+    working_dir: '/root/'
+    tty: true
+    volumes:
+      - ./src:/root/src
