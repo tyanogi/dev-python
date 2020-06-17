@@ -1,7 +1,4 @@
 # Devlopment Python
-## ToDo
-- install virtualenv
-
 ## Require
 - Docker
 - VSCode 
