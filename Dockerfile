@@ -11,6 +11,8 @@ ENV TZ JST-9
 ENV TERM xterm
 
 RUN apt install -y vim less
+RUN curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
+RUN echo "PATH=$PATH:$HOME/.poetry/bin/" >> $HOME/.bashrc
 RUN pip install --upgrade pip
 RUN pip install --upgrade setuptools
 RUN pip install --upgrade virtualenv
