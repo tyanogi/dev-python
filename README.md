@@ -6,11 +6,14 @@
     - Remote Containers
 
 ## Create Container
-1. Select GreenIcon
+1. Select GreenIcon<br>
 ![](./doc/img/remote_containers01.png)
-2. Select `Remote-Containers:Open Folder in Container`
+
+2. Select `Remote-Containers:Open Folder in Container`<br>
 ![](./doc/img/remote_containers02.png)
+
 3. Selcet this project directory
+
 4. Select `Remote-Containers: Attach to Running Container`
 
 ## Enable vscode intellisense in Container
@@ -19,14 +22,6 @@
 $ docker exec dev-python3 /bin/bash -c "pip list -v" | awk '{print $3}' | uniq | grep "^/" | awk '{printf"\"%s\",\n", $1}'
 
 =========== print example
-"/usr/local/lib/python3.8/site-packages",
-"/root/.local/lib/python3.8/site-packages",
-"/usr/local/lib/python3.8/site-packages",
-"/root/.local/lib/python3.8/site-packages",
-"/usr/local/lib/python3.8/site-packages",
-"/root/.local/lib/python3.8/site-packages",
-"/usr/local/lib/python3.8/site-packages",
-"/root/.local/lib/python3.8/site-packages",
 "/usr/local/lib/python3.8/site-packages",
 ===========
 ```
@@ -42,15 +37,6 @@ $ touch .vscode/config.json
 {
     "python.autoComplete.extraPaths": [
         "/usr/local/lib/python3.8/site-packages",
-        "/root/.local/lib/python3.8/site-packages",
-        "/usr/local/lib/python3.8/site-packages",
-        "/root/.local/lib/python3.8/site-packages",
-        "/usr/local/lib/python3.8/site-packages",
-        "/root/.local/lib/python3.8/site-packages",
-        "/usr/local/lib/python3.8/site-packages",
-        "/root/.local/lib/python3.8/site-packages",
-        "/usr/local/lib/python3.8/site-packages",
-        "/root/.local/lib/python3.8/site-packages",
     ],
 }
 ```
