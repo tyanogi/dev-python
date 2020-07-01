@@ -9,3 +9,4 @@ services:
     tty: true
     volumes:
       - ./src:/root/src
+      - ./.vscode:/root/.vscode
